@@ -209,7 +209,7 @@ class NBSdriver(webdriver.Chrome):
         """ Go to NBS Home page. """
         #xpath = '//*[@id="bd"]/table[1]/tbody/tr/td[1]/table/tbody/tr/td[1]/a'
         partial_link = 'Home'
-        for attempt in range(self.num_attempts):
+        for _ in range(self.num_attempts):
             try:
                 #WebDriverWait(self,self.wait_before_timeout).until(EC.presence_of_element_located((By.XPATH, xpath)))
                 #self.find_element(By.XPATH, xpath).click()
@@ -666,8 +666,8 @@ class NBSdriver(webdriver.Chrome):
         """ If value is blank add appropriate message to list of issues. """
         value = self.find_element(By.XPATH, xpath).get_attribute('innerText')
         value = value.replace('\n','')
-        if not value:
-            self.issues.append(blank_message)
+        # if not value:
+        #     self.issues.append(blank_message)
         return value
 
     def check_for_value_bool(self, path):
@@ -848,7 +848,7 @@ class NBSdriver(webdriver.Chrome):
                 zip_code = validation.result['AddressValidateResponse']['Address']['Zip5']
             else:
                 zip_code = ''
-        except:
+        except Exception:
             zip_code = ''
         return zip_code
 
@@ -860,14 +860,14 @@ class NBSdriver(webdriver.Chrome):
                 nbs_error = True
             else:
                 nbs_error = False
-        except:
+        except Exception:
             nbs_error = False
         return nbs_error
 
     def go_to_home_from_error_page(self):
         """ Go to NBS Home page from an NBS error page. """
         xpath = '/html/body/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/a'
-        for attempt in range(self.num_attempts):
+        for _ in range(self.num_attempts):
             try:
                 WebDriverWait(self,self.wait_before_timeout).until(EC.presence_of_element_located((By.XPATH, xpath)))
                 self.find_element(By.XPATH, xpath).click()

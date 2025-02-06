@@ -539,6 +539,8 @@ def start_audrey(username, passcode):
                                 condition = "Hepatitis C, acute"
                         else:
                             condition = "Hepatitis C, chronic"
+                elif ("Not Detected" in resulted_test_table["Coded Result / Organism Name"].values and "Below threshold" in resulted_test_table["Coded Result / Organism Name"].values) or ("Not Detected" in resulted_test_table["Text Result"].values and "Below threshold" in resulted_test_table["Text Result"].values) and "HCV RNA Not Detected" in resulted_test_table["Result Comments"].values:
+                    mark_reviewed = True            
                 elif any(x in str(resulted_test_table["Coded Result / Organism Name"]) for x in ["Undetected", "Not Detected", "UNDETECTED", "NOT DETECTED", "Negative", "NEGATIVE", "Unable"])  or any(x in str(resulted_test_table["Text Result"]) for x in ["Undetected", "Not Detected", "UNDETECTED", "NOT DETECTED", "Negative", "NEGATIVE", "Unable"]) or any(x in str(resulted_test_table["Result Comments"]) for x in ["HCV RNA Not Detected"]):
                     if acute_inv is not None and chronic_inv is not None: 
                         year = int(datetime.today().strftime("%Y"))
@@ -569,6 +571,8 @@ def start_audrey(username, passcode):
             if test_condition == "Hepatitis B":
                 if "Not Detected" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "Below threshold" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "Not Detected" in str(resulted_test_table["Text Result"].iloc[0]) or "Below threshold" in str(resulted_test_table["Text Result"].iloc[0]) or "Unable" in str(resulted_test_table["Text Result"].iloc[0]) or "Unable" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "not detected" in str(resulted_test_table["Text Result"].iloc[0]) or "not detected" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "UNDETECTED" in str(resulted_test_table["Text Result"].iloc[0]) or "UNDETECTED" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "UNDETECTED" in str(resulted_test_table["Numeric Result"].iloc[0]) or "Negative" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "Negative" in str(resulted_test_table["Numeric Result"].iloc[0]) or "Non-Reactive" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "Non-Reactive" in str(resulted_test_table["Numeric Result"].iloc[0]) or "Non-Reactive" in str(resulted_test_table["Text Result"].iloc[0]) or "NEG" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "NEG" in str(resulted_test_table["Numeric Result"].iloc[0]) or "NEG" in str(resulted_test_table["Text Result"].iloc[0]) or "NON-REACTIVE" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) or "NON-REACTIVE" in str(resulted_test_table["Numeric Result"].iloc[0]) or "NON-REACTIVE" in str(resulted_test_table["Text Result"].iloc[0]):
                     mark_reviewed = True
+                elif "Non-Reactive" in str(resulted_test_table["Coded Result / Organism Name"].iloc[0]) and test_type == 'Antigen':
+                    mark_reviewed = True 
                 else:
                     IgM_lab = lab_report_table[lab_report_table["Test Results"].str.contains("IgM|IGM")]
                     IgM_lab = IgM_lab[IgM_lab["Test Results"].str.contains("HEPATITIS B|HBV|Hepatitis B")]

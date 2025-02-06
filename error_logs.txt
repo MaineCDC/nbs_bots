@@ -538,3 +538,749 @@ Traceback (most recent call last):
     error = True
 Exception: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
 
+02_03_2025 - 09:53:02.706082 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args)
+           ^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 182, in start_anaplasma
+    raise Exception(error_list)
+Exception: []
+
+02_03_2025 - 10:56:50.966839 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 11:06:12.976248 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 11:07:40.807550 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 11:11:04.778636 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 184, in start_anaplasma
+    raise Exception(error_list)
+Exception: []
+
+02_03_2025 - 11:43:48.781878 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 11:59:01.567046 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 12:16:01.578212 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 12:21:43.619911 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 88, in frame
+    frame_reference = self._driver.find_element(By.ID, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 91, in frame
+    frame_reference = self._driver.find_element(By.NAME, frame_reference)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="contentFrame"]"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7454F02F5+28725]
+	(No symbol) [0x00007FF745452AE0]
+	(No symbol) [0x00007FF7452E510A]
+	(No symbol) [0x00007FF7453393D2]
+	(No symbol) [0x00007FF7453395FC]
+	(No symbol) [0x00007FF745383407]
+	(No symbol) [0x00007FF74535FFEF]
+	(No symbol) [0x00007FF745380181]
+	(No symbol) [0x00007FF74535FD53]
+	(No symbol) [0x00007FF74532A0E3]
+	(No symbol) [0x00007FF74532B471]
+	GetHandleVerifier [0x00007FF74581F30D+3366989]
+	GetHandleVerifier [0x00007FF7458312F0+3440688]
+	GetHandleVerifier [0x00007FF7458278FD+3401277]
+	GetHandleVerifier [0x00007FF7455BAAAB+858091]
+	(No symbol) [0x00007FF74545E74F]
+	(No symbol) [0x00007FF74545A304]
+	(No symbol) [0x00007FF74545A49D]
+	(No symbol) [0x00007FF745448B69]
+	BaseThreadInitThunk [0x00007FF8CEED7374+20]
+	RtlUserThreadStart [0x00007FF8CF01CC91+33]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 48, in start_anaplasma
+    NBS.log_in()
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 139, in log_in
+    self.switch_to.frame("contentFrame")
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 93, in frame
+    raise NoSuchFrameException(frame_reference) from exc
+selenium.common.exceptions.NoSuchFrameException: Message: contentFrame
+
+
+02_03_2025 - 12:22:38.402950 | anaplasma - Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\decorator.py", line 9, in wrapper_error_handle
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma_bot.py", line 40, in start_anaplasma
+    from .anaplasma import Anaplasma
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\anaplasma_files\anaplasma.py", line 8, in <module>
+    from base import NBSdriver
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\base.py", line 17, in <module>
+    driver = webdriver.Chrome(service=service)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 382, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb.jones\Repos\nbsbot.v1.5\env\Lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+

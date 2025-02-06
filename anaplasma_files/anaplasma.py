@@ -254,9 +254,9 @@ class Anaplasma(NBSdriver):
             elif self.admission_date > self.now:
                 self.issues.append('Admission date cannot be in the future.')
                 print(f"hospitalization, admission_date: {self.admission_date}")
-        elif self.hospitalization_indicator != "Yes":                     #new code
-            self.issues.append('Hospitalization status not indicated')    #new code
-            print(f"hospitalization: {self.hospitalization_indicator}")
+        elif self.hospitalization_indicator not in ['Yes', 'No']: 
+            self.issues.append("Patient hospitalization status not indicated.")
+            
     def CheckIllnessDurationUnits(self):
         """ Read Illness duration units, should be either Day, Month, or Year """
         self.IllnessDurationUnits = self.ReadText('//*[@id="INV140"]')
